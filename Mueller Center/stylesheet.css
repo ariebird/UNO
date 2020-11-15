@@ -10,7 +10,7 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-button {
+/* button {
   background-color: #ff4040;
   color: white;
   padding: 14px 20px;
@@ -18,7 +18,7 @@ button {
   border: none;
   cursor: pointer;
   width: 100%;
-}
+} */
 
 button:hover {
   opacity: 0.8;
@@ -26,10 +26,21 @@ button:hover {
 
 .cancelbtn {
   width: auto;
-  padding: 8px 18px;
+  padding: 10px 18px;
   background-color: #de8181;
 }
-
+button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #ff4040;
+}
 .container {
   padding: 16px;
 }
