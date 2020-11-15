@@ -1,26 +1,32 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
+<!--updated welcome page -->
+<head>
     <title>Log In</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href = "../stylesheet.css" rel = "stylesheet" type = "text/css">
+</head>
+<body>
+  <form action="action_page.php" method="post">
+    <div class="imgcontainer">
+      </div>
+      <h2 id="signIn">Sign in:</h2>
+      <div class="container">
+        <label class = "field" for="user"><b>RCSID: </b></label>
+        <div class="value"><input type="text" value="" placeholder="Enter RCSID" name="user" id="user" required></div>
 
-  <body>
-    
-    <h2 id = "signIn">Sign In:</h2>
+        <label class = "field" for="password"><b>Password</b></label>
+        <div class="value"><input type="password" placeholder="Enter Password" value="" name="password" id="password" required></div>
 
-    <label class="field" for = "user">RCSID: </label>
-      <div class="value"><input type="text" size="60" value="" name="user" id="user"/></div>
+        <button type="submit" id="submit"> Login </button>
+      </div>
 
-    <label class="field" for = "password">Password: </label>
-      <div class="value"><input type="text" size="60" value="" name="password" id="password"/></div>
-    
-    <button type="button">   
-      Sign In
-    </button>
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
 
-  </body>
+</body>
 </html>
-
-
