@@ -1,29 +1,38 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title>Make a Reservation</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link href = "../stylesheet.css" rel = "stylesheet" type = "text/css">
+<!DOCTYPE html>
+<html>
+  <script src = "../resources/jquery-3.1.1.min.js"></script>
+  <script src="../resources/navigation.js"></script>
+  <script type="text/javascript" src="../resources/js_reservation_page.js"></script>
+<body>
 
-  </head>
-    <body>
+<h1>Make your Reservation:</h1>
+<p>Select a Date and Time you would like to reserve for the gym.</p>
+<form method= "post" action="page.php">
+    <label for="date">Please Enter a Date in the form of (YYYY/MM/DD):</label>
+    <textarea id="date" name="date" rows="1" cols="35">
+      Please enter a date. 
+      </textarea>
+      <br><br>
+</form>
 
-      <label for="resTime">Choose a Date:</label>
-      <input type="datetime-local" id="resTime" name="resTime">
+<form method= "post" action="page.php">
+  <label for="time">Choose a time:</label>
+  <select name="time" id="time">
+    <option value="time">TIME</option>
+    <option value="11">11pm</option>
+    <option value="12">12pm</option>
+    <option value="1">1pm</option>
+    <option value="2">2pm</option>
+    <option value="3">3pm</option>
+    <option value="4">4pm</option>
+    <option value="5">5pm</option>
+  </select>
+  <br><br>
+</form>
+<input type="button" value="Submit" onclick="submitForms()"/>
 
-      <label for="resTime">Select a time:</label>
-      <input type="time" id="resTime" name="resTime">
+<p> The action="page.php" part of this code is how the data will be sent 
+to a database. I used "page.php" just as an example.</p>
 
-      <button type="button" id = "logIn">Submit</button>
-
-      <h3>To find the Mueller Center protocols, Click</h3>
-      <button type="button" id = "protocols">Here!</button>
-
-      <h3>To return to the Home Page, Click</h3>
-      <button type="button" id = "home">Here!</button>
-
-      <h3>Any comments, questions, or concerns, Click</h3>
-      <button type="button" id = "protocols">Here!</button>
-
-  </body>
+</body>
 </html>

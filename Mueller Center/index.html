@@ -3,19 +3,22 @@
   <head>
     <title>Home Page</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link href = "stylesheet.css" rel = "stylesheet" type = "text/css">
+    <link href = "resources/stylesheet.css" rel = "stylesheet" type = "text/css">
+
+    <script src = "resources/jquery-3.1.1.min.js"></script>
+
     <button type="button" class="loginBtn" id = "res"><a href = "../gymAccess/login.html">Login</a></button>
 
   </head>
 
   <body>
-
+    <h1>Mueller Center Home</h1>
     <h3>Gym Status</h3>
 
     <h5>Current Population</h5>
     <p id = "pop"></p>
     <h5>Spots Remaining</h5>
-    <p id = "pop"></p>
+    <p id = "space"></p>
 
     <h5>Current Reservation:</h5>
     <h6>Date:</h6>
@@ -23,10 +26,10 @@
     <h6>Time:</h6>
     <p id = "resTime"></p>
 
-    <button type="button" id = "logIn">Mueller Center Protocols</button>
-    <button type="button" id = "logIn">RPI Covid 19 Protocols </button>
+    <button type="button" id = "mueller"><a>Mueller Center Protocols</a></button>
+    <button type="button" id = "covid"><a>RPI Covid 19 Protocols</a></button>
 
-    <button type="button" id = "atGym ">Currently at the Gym?</button>
+    <button type="button" id = "atGym "><a href>Currently at the Gym?</a></button>
     <button type="button" id = "res"><a href = "../gymAccess/reservation.html">Make a Reservation</a></button>
 
 
