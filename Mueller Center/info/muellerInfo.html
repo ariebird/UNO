@@ -7,18 +7,31 @@
     <link href = "../resources/stylesheet.css" rel = "stylesheet" type = "text/css">
 
     <script src = "../resources/jquery-3.1.1.min.js"></script>
-    <script src="resources/navigation.js"></script>
+    <script src= "../resources/navigation.js"></script>
     
   </head>
 
   <body>
-    
-    <button type="button" id = "atGym ">Currently at the Gym? Click Here!</button>
-    <p>Or, use a QR Scanner to be brought directly to the Sign In page</p>
-    <button type="button" id = "res">Want to Make a Reservation? Click Here!</button>
+    <p id="img"><img id="logo" src="../resources/logo.png" alt="RPI Logo"/></p>
+    <h1>Mueller Center COVID-19 Protocols</h1>
+
+    <button type="button" class="loginBtn" id = "res" onclick="window.location.assign('../gymAccess/login.html');"><a>Login</a></button><!--
+ --><button type="button" id = "home" onclick="window.location.assign('../index.html');"><a>Home</a></button><!--
+ --><button type="button" id = "atGym" onclick="window.location.assign('../gymAccess/checkin_out.html');"><a>Currently at Gym?</a></button><!--
+ --><button type="button" id = "res" onclick="window.location.assign('../gymAccess/reservation.html');"><a>Make Reservation</a></button><!--
+ --><button type="button" id = "mueller" onclick="window.location.assign('muellerInfo.html');"><a>Mueller Center Protocols</a></button><!--
+ --><button type="button" id = "covid" onclick="window.location.assign('https://covid19.rpi.edu/');"><a>RPI Covid 19 Protocols</a></button>
+
+    <!--<p>Or, use a QR Scanner to be brought directly to the Sign In page</p>-->
+
+    <div id="sideMenu">
+      <h4 id = "hours">Hours of Operation</h4>
+      <p>     Mon - Fri</p>
+      <p>     9AM - 5PM</p>
+    </div> 
 
     <h2>COVID-19 Protocols</h2>
-    <p>To ensure safety from the COVID-19 virus, the Mueller Center will do 
+    <p id="protocols">To ensure safety from the COVID-19 virus, the Mueller Center will do 
        everything in its power to protect RPI students.  Most importantly, 
        the Mueller Center will be operating at reduced capacity to ensure 
        social distancing protocols are being met. A reservation system has been put into 
@@ -27,13 +40,13 @@
        will be cleaned at the beginning and end of each day.  
     </p>
 
-    <h4 id = "hours">Hours of Operation</h4>
-    <p>Mon-Fri</p>
+    
 
     <h3 id = "contactInfo">Contact Information</h3>
-    <p id = "contact">Email: </p>
-    <p id = "contact">Phone Number:</p>
-      
+    <p id = "contact">Email: allars@rpi.edu</p>
+    <p id = "contact">Phone Number: 518-276-2874</p>
+     
+
   </body>
   
 </html>
