@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Check-In</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href = "../resources/stylesheet.css" rel = "stylesheet" type = "text/css">
+
+    <script src = "../resources/jquery-3.1.1.min.js"></script>
+    <script src="../resources/navigation.js"></script>
+
+  </head>
+
+  <body onload="loggedIn();">
+    <p id="img"><img id="logo" src="../resources/logo.png" alt="RPI Logo"/></p>
+    <h1>Check In/Out</h1>
+
+    <button type="button" class="loginBtn" id = "log" onclick="navigation2();"><a>Log In</a></button><!--
+ --><button type="button" id = "home" onclick="window.location.assign('../index.html');"><a>Home</a></button><!--
+ --><button type="button" id = "atGym" onclick="window.location.assign('checkin_out.html');"><a>Currently at Gym?</a></button><!--
+ --><button type="button" id = "res" onclick="window.location.assign('reservation.html');"><a>Make Reservation</a></button><!--
+ --><button type="button" id = "mueller" onclick="window.location.assign('../info/muellerInfo.html');"><a>Mueller Center Protocols</a></button><!--
+ --><button type="button" id = "covid" onclick="window.location.assign('https://covid19.rpi.edu/');"><a>RPI Covid 19 Protocols</a></button>
+
+    <h2 id = "entering">Are you entering or currently leaving the gym?</h2>
+    <p>(Choose only one)</p>
+
+    <input type="checkbox" id="entering" name="entering" value="">
+    <label for="entering">Entering the Mueller Center</label><br>
+
+    <input type="checkbox" id="leaving" name="leaving" value="">
+    <label for="leaving">Leaving the Mueller Center</label><br>
+
+    <button type="button" id = "logIn" onclick="window.location.assign('login.html');">Submit</button>
+
+  </body>
+
+</html>

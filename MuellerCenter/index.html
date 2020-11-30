@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Home Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href = "resources/stylesheet.css" rel = "stylesheet" type = "text/css">
+
+    <script src = "resources/jquery-3.1.1.min.js"></script>
+    <script src = "resources/login.js"></script>
+
+
+  </head>
+
+  <body onload="loggedIn();">
+    <p id="img"><img id="logo" src="resources/logo.png" alt="RPI Logo"/></p>
+    <h1>Mueller Center Home</h1>
+
+    <button type="button" class="loginBtn" id = "log" onclick="navigation1();">Log In</button><!--
+ --><button type="button" id = "home" onclick="window.location.assign('index.html');"><a>Home</a></button><!--
+ --><button type="button" id = "atGym" onclick="window.location.assign('gymAccess/checkin_out.html');"><a>Currently at Gym?</a></button><!--
+ --><button type="button" id = "res" onclick="window.location.assign('gymAccess/reservation.html');"><a>Make Reservation</a></button><!--
+ --><button type="button" id = "mueller" onclick="window.location.assign('info/muellerInfo.html');"><a>Mueller Center Protocols</a></button><!--
+ --><button type="button" id = "covid" onclick="window.location.assign('https://covid19.rpi.edu/');"><a>RPI Covid 19 Protocols</a></button>
+   
+   <p><img id="gym" src="resources/gym.jfif" alt="Mueller Center Weight Room"/></p>
+
+    <h3 id="status">Gym Status</h3>
+
+    <ul id="popInfo">
+      <h5 id="currentPop">Current Population</h5>
+      <h5 id="spots">Spots Remaining</h5>
+      <p id="pop">15</p>
+      <p id="space">05</p>
+    </ul>
+
+    <h3>Reservation</h3>
+    <ul id="resInfo">
+      <h6 id="date">Date: N/A</h6>
+      <h6 id="time">Time: N/A</h6>
+    </ul> 
+
+    <!--<p id = "resDate"></p>
+    <p id = "resTime"></p>-->
+
+  </body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <link href = "../resources/stylesheet.css" rel = "stylesheet" type = "text/css">
+
+  <script src = "../resources/jquery-3.1.1.min.js"></script>
+  <script src="../resources/navigation.js"></script>
+  <script type="text/javascript" src="../resources/js_reservation_page.js"></script>
+  <script src = "../resources/login.js"></script>
+<body onload="loggedIn();"> 
+  <p id="img"><img id="logo" src="../resources/logo.png" alt="RPI Logo"/></p>
+  <h1>Make a Reservation</h1>
+
+  <button type="button" class="loginBtn" id = "log" onclick="navigation2();"><a>Log In</a></button><!--
+--><button type="button" id = "home" onclick="window.location.assign('../index.html');"><a>Home</a></button><!--
+--><button type="button" id = "atGym" onclick="window.location.assign('checkin_out.html');"><a>Currently at Gym?</a></button><!--
+--><button type="button" id = "res" onclick="window.location.assign('reservation.html');"><a>Make Reservation</a></button><!--
+--><button type="button" id = "mueller" onclick="window.location.assign('../info/muellerInfo.html');"><a>Mueller Center Protocols</a></button><!--
+--><button type="button" id = "covid" onclick="window.location.assign('https://covid19.rpi.edu/');"><a>RPI Covid 19 Protocols</a></button>
+
+<p>Select a Date and Time you would like to reserve for the gym.</p>
+<form method= "post" action="page.php">
+    <label for="date">Please Enter a Date in the form of (YYYY-MM-DD):</label>
+    <textarea id="date" name="date" rows="1" cols="35" onfocus="deleteTxt();" onblur="defaultTxt();">Please enter a date.</textarea>
+      <br><br>
+</form>
+
+<form method= "post" action="page.php">
+  <label for="time">Choose a time:</label>
+  <select name="time" id="time">
+    <option value="time">TIME</option>
+    <option value="11">11pm</option>
+    <option value="12">12pm</option>
+    <option value="1">1pm</option>
+    <option value="2">2pm</option>
+    <option value="3">3pm</option>
+    <option value="4">4pm</option>
+    <option value="5">5pm</option>
+  </select>
+  <br><br>
+</form>
+<input type="button" value="Submit" onclick="/*submitForms();*/ window.location.assign('login.html');"/>
+
+<p> The action="page.php" part of this code is how the data will be sent 
+to a database. I used "page.php" just as an example.</p>
+
+</body>
+</html>
