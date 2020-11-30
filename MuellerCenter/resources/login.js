@@ -22,11 +22,11 @@ $(document).ready(function(){//1
     if (!username){
 
         console.log("Enter Username");
-        alert("Enter Username"); 
+        alert("Enter Username");
     }
     if (! password){
         console.log("Enter Password");
-        alert("Enter Password"); 
+        alert("Enter Password");
     }
       $.each(u, function(i, user) {//4
         if (username == user.userId){//checks if username is matches any in list
@@ -59,7 +59,7 @@ function loggedIn(){
     document.getElementById("log").innerText == "Log Out"
     $("#log").html("Log Out");
   }
-  
+
 };
 
 function navigation1(){
