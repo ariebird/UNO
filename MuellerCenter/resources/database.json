@@ -1,14 +1,23 @@
 [
 {
   "userId": "jonesj",
-  "Password": "baby"
+  "Password": "baby",
+  "in_out": "out",
+  "res_date": "none",
+  "res_time": "none"
 },
 {
   "userId": "davisd",
-  "Password": "mommy"
+  "Password": "mommy",
+  "in_out": "out",
+  "res_date": "none",
+  "res_time": "none"
 },
 {
   "userId": "eriksa",
-  "Password": "sissor"
+  "Password": "sissor",
+  "in_out": "out",
+  "res_date": "none",
+  "res_time": "none"
 }
 ]
