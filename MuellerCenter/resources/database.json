@@ -1,23 +1,32 @@
-[
 {
-  "userId": "jonesj",
-  "Password": "baby",
-  "in_out": "out",
-  "res_date": "none",
-  "res_time": "none"
-},
-{
-  "userId": "davisd",
-  "Password": "mommy",
-  "in_out": "out",
-  "res_date": "none",
-  "res_time": "none"
-},
-{
-  "userId": "eriksa",
-  "Password": "sissor",
-  "in_out": "out",
-  "res_date": "none",
-  "res_time": "none"
+  "userProfiles":[
+    {
+      "userId": "",
+      "Password": "",
+      "in_out": "out",
+      "res_date": "N/A",
+      "res_time": "N/A"
+    },
+    {
+      "userId": "jonesj",
+      "Password": "baby",
+      "in_out": "out",
+      "res_date": "2021-01-30",
+      "res_time": "11am"
+    },
+    {
+      "userId": "davisd",
+      "Password": "mommy",
+      "in_out": "out",
+      "res_date": "None",
+      "res_time": "None"
+    },
+    {
+      "userId": "eriksa",
+      "Password": "sissor",
+      "in_out": "out",
+      "res_date": "None",
+      "res_time": "None"
+    }
+  ]
 }
-]

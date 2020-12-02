@@ -11,10 +11,10 @@ function deleteTxt(){
     }
  }  
  
- function defaultTxt(){
-    var txt = document.getElementById("date");
-    if(txt.value == ""){
-       txt.innerHTML = "Please enter a date."
-    }
- }
+function defaultTxt(){
+   var txt = document.getElementById("date");
+   if(txt.value == ""){
+      txt.innerHTML = "Please enter a date."
+   }
+}
 

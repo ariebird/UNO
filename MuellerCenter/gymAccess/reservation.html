@@ -3,7 +3,6 @@
   <link href = "../resources/stylesheet.css" rel = "stylesheet" type = "text/css">
 
   <script src = "../resources/jquery-3.1.1.min.js"></script>
-  <script src="../resources/navigation.js"></script>
   <script type="text/javascript" src="../resources/js_reservation_page.js"></script>
   <script src = "../resources/login.js"></script>
 <body onload="loggedIn();"> 
@@ -18,17 +17,20 @@
 --><button type="button" id = "covid" onclick="window.location.assign('https://covid19.rpi.edu/');"><a>RPI Covid 19 Protocols</a></button>
 
 <p>Select a Date and Time you would like to reserve for the gym.</p>
-<form method= "post" action="page.php">
+<!--<form method= "post" action="page.php">
     <label for="date">Please Enter a Date in the form of (YYYY-MM-DD):</label>
     <textarea id="date" name="date" rows="1" cols="35" onfocus="deleteTxt();" onblur="defaultTxt();">Please enter a date.</textarea>
       <br><br>
-</form>
+</form>-->
 
-<form method= "post" action="page.php">
+<form method= "post" action="page.php" onsubmit="resSave(this);">
+  <label for="date">Please Enter a Date in the form of (YYYY-MM-DD):</label>
+    <textarea id="date" name="date" rows="1" cols="35" onfocus="deleteTxt();" onblur="defaultTxt();">Please enter a date.</textarea>
+      <br><br>  
   <label for="time">Choose a time:</label>
   <select name="time" id="time">
     <option value="time">TIME</option>
-    <option value="11">11pm</option>
+    <option value="11">11am</option>
     <option value="12">12pm</option>
     <option value="1">1pm</option>
     <option value="2">2pm</option>
@@ -37,8 +39,8 @@
     <option value="5">5pm</option>
   </select>
   <br><br>
+  <input type="button" id="sub" value="Submit" onclick="/*submitForms();*/ subClck();"/>
 </form>
-<input type="button" value="Submit" onclick="/*submitForms();*/ window.location.assign('login.html');"/>
 
 <p> The action="page.php" part of this code is how the data will be sent 
 to a database. I used "page.php" just as an example.</p>
