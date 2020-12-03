@@ -9,21 +9,21 @@
     },
     {
       "userId": "jonesj",
-      "Password": "baby",
+      "Password": "password",
       "in_out": "out",
       "res_date": "2021-01-30",
       "res_time": "11am"
     },
     {
       "userId": "davisd",
-      "Password": "mommy",
+      "Password": "birthday",
       "in_out": "out",
       "res_date": "None",
       "res_time": "None"
     },
     {
       "userId": "eriksa",
-      "Password": "sissor",
+      "Password": "1234",
       "in_out": "out",
       "res_date": "None",
       "res_time": "None"

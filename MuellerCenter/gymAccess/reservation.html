@@ -5,7 +5,7 @@
   <script src = "../resources/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="../resources/js_reservation_page.js"></script>
   <script src = "../resources/login.js"></script>
-<body onload="loggedIn();"> 
+<body onload="loggedIn(); resFocusLoad();"> 
   <p id="img"><img id="logo" src="../resources/logo.png" alt="RPI Logo"/></p>
   <h1>Make a Reservation</h1>
 
@@ -23,24 +23,23 @@
       <br><br>
 </form>-->
 
-<form method= "post" action="page.php" onsubmit="resSave(this);">
+<form method= "post" action="page.php">
   <label for="date">Please Enter a Date in the form of (YYYY-MM-DD):</label>
     <textarea id="date" name="date" rows="1" cols="35" onfocus="deleteTxt();" onblur="defaultTxt();">Please enter a date.</textarea>
       <br><br>  
   <label for="time">Choose a time:</label>
   <select name="time" id="time">
     <option value="time">TIME</option>
-    <option value="11">11am</option>
-    <option value="12">12pm</option>
-    <option value="1">1pm</option>
-    <option value="2">2pm</option>
-    <option value="3">3pm</option>
-    <option value="4">4pm</option>
-    <option value="5">5pm</option>
+    <option value="11am">11am</option>
+    <option value="12pm">12pm</option>
+    <option value="1pm">1pm</option>
+    <option value="2pm">2pm</option>
+    <option value="3pm">3pm</option>
+    <option value="4pm">4pm</option>
+    <option value="5pm">5pm</option>
   </select>
   <br><br>
-  <input type="button" id="sub" value="Submit" onclick="/*submitForms();*/ subClck();"/>
+  <input type="button" id="sub" value="Submit" onclick="/*submitForms();*/ subClck_res();"/>
 </form>
-
 </body>
 </html>
