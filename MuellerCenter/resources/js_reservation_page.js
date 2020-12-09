@@ -59,14 +59,17 @@ function subClck_res(){
           }
           else{
             if(document.getElementById("date").value == "Please enter a date." || document.getElementById("date") == ""){
-               alertTxt += "Please Enter A Reservation Date";
+               alertTxt += "Please Enter A Reservation Date\n";
             }
             if(document.getElementById("time").value == "time"){
-               alertTxt += "Please Enter A Reservation Time";
+               alertTxt += "Please Enter A Reservation Time\n";
             }
             date_list = document.getElementById("date").value.split("-");
             if(document.getElementById("date").value.length != 10 || date_list.length != 3){
-               alertTxt += "Please Enter A Valid Date"
+               alertTxt += "Please Enter A Valid Date\n";
+            }
+            if(Number(date_list[1]) > 12 || Number(date_list[2]) > 31){
+               alertTxt += "Please Enter A Valid Date";
             }
             if(alertTxt != ""){
                alert(alertTxt);
