@@ -31,11 +31,19 @@ function subClck_res(){
         var userInfo = "";
         var user = "";
         var alertTxt = "";
+        var resDate = "";
+        var resTime = "";
         //finds logged in user ID
         for(var i = 0; i < cookies.length; i++){
           userInfo = cookies[i].split("=");
           if(userInfo[0] == " user" || userInfo[0] == "user"){
             user = userInfo[1];
+          }
+          if(userInfo[0] == " resDate"){
+             resDate = userInfo[1];
+          }
+          if(userInfo[0] == " resTime"){
+             resTime = userInfo[1];
           }
         }
         //finds reservation info in user json object
@@ -45,7 +53,7 @@ function subClck_res(){
             time = item.res_time;
           }
           });
-          if(date != "None" && date != "N/A" && time != "None" && time != "N/A"){
+          if((date != "None" && date != "N/A" && time != "None" && time != "N/A") || (resDate != "" && resTime != "")){
              alert("Please complete your current reservation before making a new one");
              window.location.assign("../index.html");
           }
@@ -55,6 +63,10 @@ function subClck_res(){
             }
             if(document.getElementById("time").value == "time"){
                alertTxt += "Please Enter A Reservation Time";
+            }
+            date_list = document.getElementById("date").value.split("-");
+            if(document.getElementById("date").value.length != 10 || date_list.length != 3){
+               alertTxt += "Please Enter A Valid Date"
             }
             if(alertTxt != ""){
                alert(alertTxt);
